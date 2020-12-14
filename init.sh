@@ -17,3 +17,5 @@ pip install xlrd
 apt install xvfb
 pip install selenium
 pip install pyvirtualdisplay
+
+python app.py

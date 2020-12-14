@@ -3,7 +3,12 @@ sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 apt update
 apt install google-chrome-stable
 
-wget -N https://chromedriver.storage.googleapis.com/$(google-chrome --version)/chromedriver_linux64.zip
+
+URL=$(google-chrom --version)
+URL=${URL#*Chrome}
+URL="https://chromedriver.storage.googleapis.com/$URL/chromedriver_linux64.zip"
+URL=$(echo $URL | tr -d ' ')
+wget -N $URL
 unzip chromedriver_linux64.zip
 rm -rf chromedriver_linux64.zip
 

@@ -7,5 +7,4 @@ chmod +x init.sh을 통해 실행권한 추가
 테스트를 위해서 app.py 를 실행하고 문제 없으면 잘 설정 된 것
 
 # 주의사항
-app.py 는 해당 shell을 통해 다운로드 된 chromedriver가 /root/chromedirver에 있다고 알고있음
-
+app.py 는 해당 shell을 통해 다운로드 된 chromedriver가 /usr/share/chromedirver에 있다고 알고있음

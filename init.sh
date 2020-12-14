@@ -11,6 +11,7 @@ URL=$(echo $URL | tr -d ' ')
 wget -N $URL
 unzip chromedriver_linux64.zip
 rm -rf chromedriver_linux64.zip
+mv chromedriver /usr/share
 
 pip install xlrd
 apt install xvfb

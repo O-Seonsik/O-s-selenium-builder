@@ -4,7 +4,7 @@ apt update
 apt install google-chrome-stable
 
 
-URL=$(google-chrom --version)
+URL=$(google-chrome --version)
 URL=${URL#*Chrome}
 URL="https://chromedriver.storage.googleapis.com/$URL/chromedriver_linux64.zip"
 URL=$(echo $URL | tr -d ' ')

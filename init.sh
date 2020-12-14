@@ -3,7 +3,6 @@ sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 apt update
 apt install google-chrome-stable
 
-
 URL=$(google-chrome --version)
 URL=${URL#*Chrome}
 URL="https://chromedriver.storage.googleapis.com/$URL/chromedriver_linux64.zip"
